@@ -185,7 +185,7 @@ module Disqus
       # * <tt>:title</tt> - the title of the thread to possibly be created
       # * <tt>:identifier</tt> - a string of your choosing
       def thread_by_identifier(opts = {})
-        JSON.parse(post('thread_by_identifier', :forum_api_key => opts[:forum_api_key],
+        JSON.parse(post('thread_by_identifier/', :forum_api_key => opts[:forum_api_key],
                                                 :identifier => opts[:identifier],
                                                 :title => opts[:title] ))
       end
